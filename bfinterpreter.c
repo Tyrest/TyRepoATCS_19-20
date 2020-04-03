@@ -262,14 +262,14 @@ void readRunes(char * runes)
         runes++;
     }
 
-    printf("\n=== Finished Reading Runes! ===\n");
+    // printf("\n=== Finished Reading Runes! ===\n");
 }
 
 int main(int argc, char **argv)
 {
     FILE * runesFile = fopen(argv[1], "r");
 
-    clock_t begin = clock();
+    // clock_t begin = clock();
     
     char * runes = readFile(runesFile);
 
@@ -283,9 +283,9 @@ int main(int argc, char **argv)
     
     readRunes(runes);
 
-    clock_t end = clock();
-    double timeSpent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time Spent: %f\n", timeSpent);
+    // clock_t end = clock();
+    // double timeSpent = (double)(end - begin) / CLOCKS_PER_SEC;
+    // printf("Time Spent: %f\n", timeSpent);
 
     return(0);
 }
